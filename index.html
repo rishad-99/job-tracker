@@ -1,11 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Job-Tracker</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job-Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#F8FAFC]">
+    <!-- Counting Section -->
+    <section class="container mx-auto grid justify-center">
+      <h1 class="text-[32px] text-[#002C5C] font-bold pb-5">
+        Job Application Tracker
+      </h1>
+      <div class="counting-container flex gap-10">
+        <div class="Total-Count bg-white w-[300px] rounded-lg">
+          <p class="text-[14px] font-medium text-[#323B49] px-5 pt-5 pb-2">Total</p>
+          <h2 class="px-5 text-[24px] font-bold text-[#002C5C] pb-5">8</h2>
+        </div>
+        <div class="Interview bg-white w-[300px] rounded-lg">
+          <p class="text-[14px] font-medium text-[#323B49] px-5 pt-5 pb-2">Interview</p>
+          <h2 class="px-5 text-[24px] font-bold text-[#10B981] pb-5">3</h2>
+        </div>
+        <div class="Rejected bg-white w-[300px] rounded-lg">
+          <p class="text-[14px] font-medium text-[#323B49] px-5 pt-5 pb-2">Rejected</p>
+          <h2 class="px-5 text-[24px] font-bold text-[#EF4444] pb-5">5</h2>
+        </div>
+      </div>
+      <hr class="border border-[#E6E7E9] my-[30px]">
+    </section>
+
+    <!-- Navigation menu -->
+     <section class="container mx-auto ml-78">
+      <h2 class="text-[20px] font-semibold text-[#002C5C] pb-6">Available Jobs</h2>
+        <div class="nav-menu flex gap-5">
+          <button class="bg-white border border-[#F1F2F4] text-[#64748B] font-medium px-7 py-2.5 rounded-md">All</button>
+          <button class="bg-white border border-[#F1F2F4] text-[#64748B] font-medium px-7 py-2.5 rounded-md">Interview</button>
+          <button class="bg-white border border-[#F1F2F4] text-[#64748B] font-medium px-7 py-2.5  rounded-md">Rejected</button>
+     </section>
+  </body>
 </html>
