@@ -12,9 +12,9 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-[#F8FAFC]">
+  <body class="bg-[#F8FAFC] grid justify-center">
     <!-- Counting Section -->
-    <section class="container mx-auto grid justify-center">
+    <section class="container mx-auto pt-12">
       <h1 class="text-[32px] text-[#002C5C] font-bold pb-5">
         Job Application Tracker
       </h1>
@@ -36,12 +36,29 @@
     </section>
 
     <!-- Navigation menu -->
-     <section class="container mx-auto ml-78">
-      <h2 class="text-[20px] font-semibold text-[#002C5C] pb-6">Available Jobs</h2>
+     <section class="container mx-auto">
+      <div class="grid justify-start">
+        <h2 class="text-[20px] font-semibold text-[#002C5C] pb-6">Available Jobs</h2>
         <div class="nav-menu flex gap-5">
-          <button class="bg-white border border-[#F1F2F4] text-[#64748B] font-medium px-7 py-2.5 rounded-md">All</button>
-          <button class="bg-white border border-[#F1F2F4] text-[#64748B] font-medium px-7 py-2.5 rounded-md">Interview</button>
-          <button class="bg-white border border-[#F1F2F4] text-[#64748B] font-medium px-7 py-2.5  rounded-md">Rejected</button>
+          <button class="bg-white border border-[#F1F2F4] text-[#64748B] font-medium px-7 py-2.5 rounded-md cursor-pointer focus:bg-[#3B82F6] focus:text-white transition-all duration-300">All</button>
+          <button class="bg-white border border-[#F1F2F4] text-[#64748B] font-medium px-7 py-2.5 rounded-md cursor-pointer focus:bg-[#3B82F6] focus:text-white transition-all duration-300">Interview</button>
+          <button class="bg-white border border-[#F1F2F4] text-[#64748B] font-medium px-7 py-2.5  rounded-md cursor-pointer focus:bg-[#3B82F6] focus:text-white transition-all duration-300">Rejected</button>
+      </div>
      </section>
+
+     <!-- Interview Applications -->
+      <section>
+        <div class="application-container mt-4 pb-10">
+          <div class="bg-white w-full rounded-lg p-6">
+          <h2 class="text-[#002C5C] text-[18px] font-semibold leading-[26px] pb-1">Mobile First Corp</h2>
+          <p class="text-[#64748B] text-[16px] leading-5">React Native Developer</p>
+          <p class="py-5 text-[#64748B] text-[14px] leading-5">Remote • Full-time • $130,000 - $175,000</p>
+          <button class="text-[#002C5C] text-[14px] leading-5 px-2 py-3 bg-[#EEF4FF] font-medium rounded-md mb-2">NOT APPLIED</button>
+          <p class="text-[#323B49] text-[14px] leading-5 pb-5 pt-3">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+          <button class="text-[#10B981] text-[14px] font-semibold leading-5 border-[1.5px] border-[#10B981] px-3 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#10B981] transition-all duration-300 mr-2">INTERVIEW</button>
+          <button class="text-[#EF4444] text-[14px] font-semibold leading-5 border-[1.5px] border-[#EF4444] px-3 py-2 rounded-md cursor-pointer hover:text-white hover:bg-[#EF4444] transition-all duration-300">REJECTED</button>
+        </div>
+        </div>
+      </section>
   </body>
 </html>
